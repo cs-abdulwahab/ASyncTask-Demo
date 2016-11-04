@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 public class SecBTask extends AsyncTask<String, Integer, Boolean> {
     private String TAG = "TAG";
-    Activity context;
+    private Activity context;
 
-    public SecBTask(Activity context) {
+     SecBTask(Activity context) {
 
         this.context = context;
     }
@@ -29,7 +29,7 @@ public class SecBTask extends AsyncTask<String, Integer, Boolean> {
     @Override
     protected Boolean doInBackground(String... strings) {
 
-       /* for (int i = 1; i <= strings.length; i++) {
+        for (int i = 0; i < strings.length; i++) {
 
             Log.d("TAG", "doInBackground()  = [" + strings[i] + "]");
 
@@ -40,7 +40,7 @@ public class SecBTask extends AsyncTask<String, Integer, Boolean> {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }*/
+        }
 
         return true;
     }
