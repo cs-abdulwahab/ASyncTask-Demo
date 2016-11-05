@@ -16,8 +16,8 @@ public class SecBTask extends AsyncTask<String, Integer, Boolean> {
 
      SecBTask(Activity context) {
         this.context = context;
-    }
 
+    }
 
     @Override
     protected void onPreExecute() {

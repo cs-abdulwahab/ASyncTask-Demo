@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll()
                 .penaltyLog()
                 .build());
+        
 
 
     }
