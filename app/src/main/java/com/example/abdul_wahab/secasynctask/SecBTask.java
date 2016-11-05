@@ -15,7 +15,6 @@ public class SecBTask extends AsyncTask<String, Integer, Boolean> {
     private Activity context;
 
      SecBTask(Activity context) {
-
         this.context = context;
     }
 
@@ -32,7 +31,6 @@ public class SecBTask extends AsyncTask<String, Integer, Boolean> {
         for (int i = 0; i < strings.length; i++) {
 
             Log.d("TAG", "doInBackground()  = [" + strings[i] + "]");
-
             publishProgress(i);
 
             try {
